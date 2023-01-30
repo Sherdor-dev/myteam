@@ -1,0 +1,93 @@
+
+.contact{
+    padding: 80px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--item{
+        width: 100%;
+        & h1{
+            font-family: 'Livvic';
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 100px;            
+            color: #FFFFFF;
+        }
+        & h3{
+            margin-bottom: 20px;
+            font-family: 'Livvic';
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 48px;            
+            color: #F67E7E;
+        }
+        &__part{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            & h4{
+                font-family: 'Livvic';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &--form{
+        width: 100%;
+        &__input{
+            padding: 20px 0px;
+            display: flex;
+            gap: 20px;
+            #message{
+                margin-bottom: 20px;
+            }
+            & label{
+                font-family: 'Livvic';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;         
+                letter-spacing: -0.115385px;                
+                color: #FFFFFF;               
+                mix-blend-mode: normal;
+                opacity: 0.6;
+            }
+            & input{
+                background-color: #ffffff00;
+                outline: none;
+                border: none;
+            }
+        }
+        & button{
+            margin-top: 35px;
+            padding: 7px 24px;
+            font-family: 'Livvic';
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: #004047;
+            border-radius: 24px;
+            border: 2px solid #FFFFFF;
+        }
+        & button:hover{
+            color: #FFFFFF;
+            background-color: #004047;
+        }
+    }
+}
+@media only screen and(max-width:768px){
+    .contact{
+        padding: 80px 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--item{
+            margin-bottom: 40px;
+        }
+    }
+}

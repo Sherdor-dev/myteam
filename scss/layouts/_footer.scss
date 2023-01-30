@@ -1,0 +1,111 @@
+// Footer styles
+footer{
+    background-color: #002529;
+    width: 100%;
+}
+.footer{
+    width: 100%;
+    padding: 48px 0px;
+    display: flex;
+    justify-content: space-between;
+    &--menu{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        &__logo{
+            font-family: 'Livvic';
+            font-size: 35px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        &__list{
+            display: flex;
+            gap: 30px;
+            & a{
+                text-decoration: none;
+                font-family: 'Livvic';
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+            & a:hover{
+                color: #F67E7E;
+            }
+        }
+    }
+    &--ul{
+        & li{
+            list-style: none;
+            font-family: 'Livvic';
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.6;
+        }
+    }
+    &--links{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        &__icon{
+            display: flex;
+            gap: 8px;
+            color: #FFFFFF;
+            & i:hover{
+                color: #F67E7E;
+            }
+        }
+        & small{
+            font-family: 'Livvic';
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: right;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.6;
+        }
+    }
+}
+@media only screen and(max-width: 768px){
+    .footer{
+        padding: 40px 0px;
+        flex-wrap: wrap;
+        &--menu{
+            gap: 32px;
+        }
+        &--links{
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            gap: 55px;
+        }
+    }  
+}
+@media only screen and(max-width: 480px){
+    .footer{
+        gap: 30px;
+        padding: 40px 0px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        &--menu{
+            gap: 32px;
+        }
+        &--ul{
+            text-align: center;
+        }
+        &--links{
+            margin-top: 20px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            gap: 25px;
+        }
+    }  
+}

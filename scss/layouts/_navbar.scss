@@ -1,0 +1,124 @@
+// Navbar styles
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 40px;
+    #menu , label{
+        display: none;
+    }
+    #logo{
+        margin-right: 20px;
+        font-family: 'Livvic';
+        font-size: 35px;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    & a{
+        text-decoration: none;
+        font-family: 'Livvic';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    &--item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__ul{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            &-li{
+                list-style: none;
+                & a:hover{
+                    color:#F67E7E;
+                }
+            }
+        }
+        &__btn{
+            padding: 10px 32px;
+            border: 2px solid white;
+            border-radius: 24px;
+        }
+        &__btn:hover{
+            background-color: #FFFFFF;
+            color: #000;
+        }
+    }
+}
+@media only screen and(max-width:576px){
+    .nav{
+        padding: 40px 0px;
+        gap: 30px;
+        #menu , label{
+            display: none;
+        }
+        #logo{
+            margin-right: 15px;
+            font-size: 30px;
+        }
+        & a{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &--item{
+            &__ul{
+                gap: 30px;
+            }
+            &__btn{
+                padding: 7px 26px;
+            }
+        }
+    }
+}
+@media only screen and(max-width:480px){
+    .nav{
+        justify-content: space-between;
+        padding: 40px 0px;
+        #menu , label{
+            display: none;
+        }
+        label{
+            z-index: 11;
+            display: block;
+            color: #FFFFFF;
+        }
+        #menu:checked ~ .nav--item{
+            right: 0%;
+        }
+        #logo{
+            margin-right: 15px;
+            font-size: 30px;
+        }
+        & a{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &--item{
+            background-image: url(../../image/headerBG.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: right;
+            gap: 60px;
+            transition: all 1s;
+            flex-direction: column;
+            justify-content: center;
+            width: 60vw;
+            height: 100vh;
+            position: fixed;
+            right: -100%;
+            top: 0;
+            z-index: 8;
+            &__ul{
+                flex-direction: column;
+                gap: 30px;
+            }
+            &__btn{
+                padding: 7px 26px;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+#bottom{
+    background-image: url(../../image/redBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bottom{
+    padding: 76px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--title{
+        h2{
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;        
+            color: #012F34;
+        }
+    }
+    &--btn{
+        text-decoration: none;
+        padding: 11px 33px;
+        border: 2px solid #012F34;
+        color: #012F34;
+        border-radius: 26px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    &--btn:hover{
+        border: 2px solid #012F34;
+        background-color: #012F34;
+        color: #ffffff;
+    }
+}
+@media only screen and(max-width:768px){
+    .bottom{
+        padding: 70px 0px;
+        &--title{
+            h2{
+                font-size: 32px;
+            }
+        }
+        &--btn{
+            padding: 7px 26px;
+            border-radius: 24px;
+            font-size: 16px;
+        }
+    }
+}
+@media only screen and(max-width:576px){
+    .bottom{
+        padding: 70px 0px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        &--title{
+            h2{
+                text-align: center;
+                font-size: 32px;
+            }
+        }
+        &--btn{
+            padding: 7px 26px;
+            border-radius: 24px;
+            font-size: 16px;
+        }
+    }
+}
